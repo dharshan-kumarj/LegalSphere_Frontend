@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SplashPage from './pages/SplashPage';
 import './App.css'
 
 function App() {
   return (
-    <>
-      <p className="bg-black text-white text-left">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SplashPage />} />
+        {/* <Route path="/auth" element={<AuthPage />} />
+        <Route path="/dashboard" element={<Dashboard />} /> */}
+      </Routes>
+    </Router>
   )
 }
 
