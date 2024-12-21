@@ -4,6 +4,7 @@ import SplashPage from './pages/SplashPage';
 import AuthPage from './pages/AuthPage';
 import LoginBox from './components/Auth/LoginBox';
 import RegisterBox from './components/Auth/RegisterBox';
+import DashboardPage from './pages/DashBoard';
 import './App.css'
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Route path="/login" element={<LoginBox />} />
         <Route path="/register" element={<RegisterBox />} />
         <Route path="/auth" element={<AuthPage />} />
-        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </Router>
   )
